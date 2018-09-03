@@ -1,0 +1,39 @@
+# Unix
+alias c="clear"
+alias port="netstat -ntlp"
+alias zshconfig="vim ~/.zshrc"
+alias copy="xclip -selection clipboard && echo 'Copied to clipboard.'"
+alias path="pwd | xclip -selection clipboard && echo 'Path copied to clipboard'"
+alias sshkey="cat ~/.ssh/id_rsa.pub | xclip -selection clipboard && echo 'Public SSH copied to clipboard.'"
+
+# Others
+alias y="yarn"
+
+# Git and Github
+alias gl="git log --oneline --graph"
+alias gdc="git diff --cached"
+alias gpoh='git push origin HEAD'
+alias glf="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias nah="git reset --hard; git clean -df;"
+
+# Laravel
+alias art="php artisan"
+alias tinker="art tinker"
+alias migrate="art migrate"
+alias routes="art route:list"
+alias fresh="art migrate:fresh --seed"
+alias serve="art serve --host 0.0.0.0"
+
+# APT
+alias purge="sudo apt purge"
+alias update="sudo apt update"
+alias list="apt list --upgradable"
+alias remove="sudo apt autoremove"
+alias upgrade="sudo apt full-upgrade"
+
+# Docker
+alias dps="docker ps"
+alias dpa="docker ps -a"
+alias dex="docker-compose exec"
+alias dco="docker-compose"
+alias dcl="docker-compose logs -f --tail 20"

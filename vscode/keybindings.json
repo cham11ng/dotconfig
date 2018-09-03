@@ -1,0 +1,34 @@
+[
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.showContextMenu",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "editorTextFocus"
+  }
+]
