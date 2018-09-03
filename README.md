@@ -4,30 +4,39 @@ Zsh + VSCode + Tilix configuration file.
 
 > By: Sagar Chamling
 
+## ZSH Configuration
+
+```sh
+$ sh zsh.sh
+
+$ cp .zshrc ~/.zshrc
+$ cp .zprofile ~/.zprofile
+$ cp .zaliases ~/.zaliases
+```
+
 ## Tilix Configuration
 
-    $ dconf dump /com/gexperts/Tilix/ > tilix.dconf # Export
+```sh
+$ dconf dump /com/gexperts/Tilix/ > tilix.dconf # Export
 
-    $ dconf load /com/gexperts/Tilix/ < tilix.dconf # Import
+$ dconf load /com/gexperts/Tilix/ < tilix.dconf # Import
+```
 
 ## GPG Keys Setup
 
-- Installation
+```sh
+$ sudo apt install gnupg2 -y
 
-    $ sudo apt install gnupg2 -y
+$ gpg2 --gen-key
 
-    $ gpg2 --gen-key
+# Export GPG public key and private key
+$ gpg2 --armor --export sgr.raee@gmail.com > ~/keys/public.key
+$ gpg2 --armor --export-secret-keys sgr.raee@gmail.com > ~/keys/private.key
 
-- Export GPG public key and private key
+# To delete previously generated keys
+$ gpg --delete-keys sgr.raee@gmail.com
+$ gpg --delete-secret-keys sgr.raee@gmail.com
 
-    $ gpg2 --armor --export sgr.raee@gmail.com > ~/keys/public.key
-    $ gpg2 --armor --export-secret-keys sgr.raee@gmail.com > ~/keys/private.key
-
-- _To delete previously generated keys_
-
-    $ gpg --delete-keys sgr.raee@gmail.com
-    $ gpg --delete-secret-keys sgr.raee@gmail.com
-
-- _To generate enough 'Entropy' for GPG key generation process_
-
-    $ sudo apt install rng-tools
+# To generate enough 'Entropy' for GPG key generation process
+$ sudo apt install rng-tools
+```
