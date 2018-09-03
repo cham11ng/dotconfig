@@ -7,7 +7,4 @@ fi
 [[ -s /home/cham11ng/.autojump/etc/profile.d/autojump.sh ]] && source /home/cham11ng/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
-if [ -f ~/.zaliases ]; then
-    source ~/.zaliases
-fi
-
+[ -f ~/.zaliases ] && source ~/.zaliases

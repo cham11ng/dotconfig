@@ -14,3 +14,5 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
