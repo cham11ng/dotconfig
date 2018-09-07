@@ -8,3 +8,7 @@ fi
 autoload -U compinit && compinit -u
 
 [ -f ~/.zaliases ] && source ~/.zaliases
+
+# Go lang
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
