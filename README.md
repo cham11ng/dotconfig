@@ -17,6 +17,12 @@ $ cp .zaliases ~/.zaliases
 ## Tilix Configuration
 
 ```sh
+# Fix tilix issue
+$ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+
+# Default terminal
+$ sudo update-alternatives --config x-terminal-emulator
+
 $ dconf dump /com/gexperts/Tilix/ > tilix.dconf # Export
 
 $ dconf load /com/gexperts/Tilix/ < tilix.dconf # Import
@@ -37,6 +43,6 @@ $ gpg2 --armor --export-secret-keys sgr.raee@gmail.com > ~/keys/private.key
 $ gpg --delete-keys sgr.raee@gmail.com
 $ gpg --delete-secret-keys sgr.raee@gmail.com
 
-# To generate enough 'Entropy' for GPG key generation process
+# Optional: To generate enough 'Entropy' for GPG key generation process
 $ sudo apt install rng-tools
 ```
