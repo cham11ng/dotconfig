@@ -16,12 +16,12 @@ session-resize-terminal-up='<Primary><Shift>Up'
 session-add-down='<Primary><Shift>bar'
 session-resize-terminal-down='<Primary><Shift>Down'
 win-switch-to-next-session='<Alt>Right'
-session-switch-to-terminal-right='<Primary>h'
+session-switch-to-terminal-right='<Primary>l'
 terminal-scroll-up='disabled'
 session-switch-to-terminal-up='<Primary>k'
 session-resize-terminal-right='<Primary><Shift>Right'
 session-switch-to-previous-terminal='disabled'
-session-switch-to-terminal-left='<Primary>l'
+session-switch-to-terminal-left='<Primary>h'
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 foreground-color='#F8F8F2'
@@ -38,7 +38,9 @@ use-system-font=false
 use-custom-command=false
 bold-color-set=false
 font='Operator Mono Semi-Light 9'
-use-theme-colors=false
+terminal-bell='icon-sound'
+notify-silence-threshold=60
 background-color='#272822'
 background-transparency-percent=10
 dim-transparency-percent=19
+use-theme-colors=false
