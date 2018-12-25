@@ -1,0 +1,47 @@
+#!/bin/bash
+
+COLOR_GREEN='\033[0;32m'
+COLOR_RED='\033[0;31m'
+COLOR_OFF='\033[0m'
+
+border() {
+    echo "-------------------------------------------------------------------------------------"
+}
+
+delete() {
+    delete_branch $DB $1
+    delete_branch $AUTH $1
+    delete_branch $COMMON $1
+    delete_branch $MANAGER $1
+    delete_branch $ADMIN $1
+    delete_branch $WEB_APP $1
+}
+
+info() {
+  echo ${COLOR_GREEN}${1}${COLOR_OFF}
+}
+
+delete_branch() {
+  border
+
+  info "Changing path: $1"
+  cd $1
+
+  info "Fetching branch from origin: $2"
+  git fetch origin $2
+
+  info "Checkout branch: $2"
+  git checkout $2
+
+  info "Deleting branch except: $2"
+  git branch | grep -v $2 | xargs -I_percent -- sh -c 'echo "Deleting branch _percent"; git branch -D _percent'
+}
+
+read -r -p "You are about to delete local branches. Are you sure? [y/N] " response
+case "$response" in [yY][eE][sS]|[yY])
+        delete ${1:-dev}
+        ;;
+    *)
+        ;;
+esac
+

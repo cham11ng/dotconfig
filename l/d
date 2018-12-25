@@ -1,0 +1,21 @@
+#!/bin/bash
+
+COLOR_GREEN='\033[0;32m'
+COLOR_RED='\033[0;31m'
+COLOR_OFF='\033[0m'
+
+echo_info() {
+    echo ${COLOR_GREEN}${1}${COLOR_OFF}
+}
+
+echo_info "Changing path: $DOCKER"
+cd $DOCKER
+
+echo_info "Starting: mssql"
+docker-compose up -d mssql
+echo_info "Starting: redis"
+docker-compose up -d redis
+echo_info "Starting: auth/common/manager/admin"
+docker-compose up -d auth common manager admin
+docker-compose logs -f --tail 0
+docker-compose up -d nginx

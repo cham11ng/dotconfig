@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Operator Mono Medium",
+  "editor.fontFamily": "Operator Mono Book",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.lineHeight": 28,
@@ -26,5 +26,6 @@
   "workbench.colorTheme": "Operator Mono Dark Theme",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
