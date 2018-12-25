@@ -1,0 +1,165 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$SelectAll" count="4" />
+      <entry action="$Undo" count="28" />
+      <entry action="About" count="3" />
+      <entry action="ActivateDatabaseToolWindow" count="1" />
+      <entry action="CloseProject" count="2" />
+      <entry action="Console.Jdbc.Execute" count="11" />
+      <entry action="DatabaseView.PropertiesAction" count="2" />
+      <entry action="DialogCancelAction Escape" count="1" />
+      <entry action="EditorBackSpace" count="23" />
+      <entry action="EditorChooseLookupItem" count="8" />
+      <entry action="EditorCopy" count="1" />
+      <entry action="EditorDeleteToWordStart" count="15" />
+      <entry action="EditorDown" count="3" />
+      <entry action="EditorEnter" count="2" />
+      <entry action="EditorEscape" count="1" />
+      <entry action="EditorLeft" count="26" />
+      <entry action="EditorNextWordWithSelection" count="22" />
+      <entry action="EditorPaste" count="2" />
+      <entry action="EditorPreviousWordWithSelection" count="2" />
+      <entry action="EditorRight" count="27" />
+      <entry action="EditorRightWithSelection" count="2" />
+      <entry action="EditorUp" count="4" />
+      <entry action="Exit" count="2" />
+      <entry action="GotoFile" count="1" />
+      <entry action="Jdbc.OpenEditor.DDL" count="1" />
+      <entry action="ShowSettings" count="4" />
+      <entry action="ViewNavigationBar" count="2" />
+      <entry action="ViewStatusBar" count="2" />
+      <entry action="ViewToolButtons" count="2" />
+    </counts>
+    <contextMenuCounts>
+      <entry action="[DatabaseViewPopup] DatabaseView.PropertiesAction" count="2" />
+      <entry action="[DatabaseViewPopup] Jdbc.OpenEditor.DDL" count="1" />
+      <entry action="[MainMenu] About" count="3" />
+      <entry action="[MainMenu] Exit" count="2" />
+      <entry action="[MainMenu] ShowSettings" count="3" />
+      <entry action="[MainMenu] ViewNavigationBar" count="2" />
+      <entry action="[MainMenu] ViewStatusBar" count="2" />
+      <entry action="[MainMenu] ViewToolButtons" count="2" />
+    </contextMenuCounts>
+  </component>
+  <component name="FUSApplicationUsageTrigger">
+    <session id="655482535">
+      <usages-collector id="statistics.import.old.config">
+        <usage id="DO_NOT_IMPORT" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.ide.self.update">
+        <usage id="notification.shown" value="3" />
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.app">
+        <usage id="ide.start" value="8" />
+        <usage id="ide.close" value="8" />
+        <usage id="ide.freeze" value="1">
+          <context>
+            <entry key="data_1" value="timeSecondsGrouped" />
+            <entry key="data_2" value="7" />
+          </context>
+        </usage>
+        <usage id="ide.error" value="10" />
+      </usages-collector>
+      <usages-collector id="statistics.ui.tips">
+        <usage id="shown.automatically" value="7" />
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FeatureUsageStatistics" first-run="1545381985053" have-been-shown="false" show-in-other="true" show-in-compilation="true">
+    <feature id="editing.completion.camelHumps" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.comment.line" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.surroundwith.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="refactoring.rename" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.action" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.cancelByControlArrows" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.table" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.symbol" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="find.recent.search" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.replace" count="0" last-shown="1545382815031" last-used="0" shown-count="70" />
+    <feature id="navigation.goto.inspection" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.camelprefix" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.file" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.wildcards" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.quickdefinition" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="find.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.basic" count="8" last-shown="0" last-used="1545382805783" shown-count="0" />
+    <feature id="tag.name.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.select.word" count="5" last-shown="0" last-used="1545382793595" shown-count="0" />
+    <feature id="navigation.recent.files" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.finishByDotEtc" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.quickjavadoc.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.popup.file.structure" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.finishByCtrlDot" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.quickjavadoc.ctrln" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.select.in" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="navigation.goto.usages" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.quickjavadoc" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="ui.recentchanges" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="ui.tree.speedsearch" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="editing.completion.changeSorting" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="ui.horizontal.scrolling" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <feature id="codeassists.quickdefinition.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
+    <completionStatsTag>
+      <option name="sparedCharacters" value="60" />
+      <option name="invocations" value="4" />
+      <option name="startDate" value="1545329700000" />
+      <option name="dayCount" value="1" />
+      <option name="lastDate" value="1545329700000" />
+    </completionStatsTag>
+    <fixesStatsTag>
+      <option name="invocations" value="0" />
+      <option name="startDate" value="0" />
+      <option name="dayCount" value="0" />
+      <option name="lastDate" value="0" />
+    </fixesStatsTag>
+  </component>
+  <component name="MainMenuCollector">
+    <counts>
+      <entry path="File -&gt; Exit" count="2" />
+      <entry path="File -&gt; Settings..." count="3" />
+      <entry path="Help -&gt; About" count="3" />
+      <entry path="View -&gt; Navigation Bar" count="2" />
+      <entry path="View -&gt; Status Bar" count="2" />
+      <entry path="View -&gt; Tool Buttons" count="2" />
+    </counts>
+  </component>
+  <component name="ShortcutsCollector">
+    <counts>
+      <entry shortcut="Alt+1" count="1" />
+      <entry shortcut="Backspace" count="23" />
+      <entry shortcut="Ctrl+A" count="4" />
+      <entry shortcut="Ctrl+Alt+Shift+Space" count="2" />
+      <entry shortcut="Ctrl+Backspace" count="15" />
+      <entry shortcut="Ctrl+C" count="1" />
+      <entry shortcut="Ctrl+Comma" count="1" />
+      <entry shortcut="Ctrl+Enter" count="11" />
+      <entry shortcut="Ctrl+P" count="1" />
+      <entry shortcut="Ctrl+Shift+Left" count="2" />
+      <entry shortcut="Ctrl+Shift+Right" count="22" />
+      <entry shortcut="Ctrl+V" count="2" />
+      <entry shortcut="Ctrl+Z" count="28" />
+      <entry shortcut="Down" count="3" />
+      <entry shortcut="Enter" count="10" />
+      <entry shortcut="Escape" count="3" />
+      <entry shortcut="Left" count="26" />
+      <entry shortcut="Right" count="27" />
+      <entry shortcut="Shift+Right" count="2" />
+      <entry shortcut="Up" count="4" />
+    </counts>
+  </component>
+  <component name="ToolWindowsCollector">
+    <counts>
+      <entry toolWindow="Database Console by Activation" count="17" />
+      <entry toolWindow="Database by Activation" count="4" />
+    </counts>
+  </component>
+  <component name="ToolbarClicksCollector">
+    <counts>
+      <entry action="com.intellij.openapi.keymap.impl.ui.KeymapPanel$8@Keymap" count="1" />
+      <entry action="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction@ToolwindowTitle" count="1" />
+    </counts>
+  </component>
+</application>
