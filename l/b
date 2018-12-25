@@ -14,6 +14,7 @@ delete() {
     delete_branch $COMMON $1
     delete_branch $MANAGER $1
     delete_branch $ADMIN $1
+    delete_branch $BACKEND $1
     delete_branch $WEB_APP $1
 }
 
@@ -44,4 +45,3 @@ case "$response" in [yY][eE][sS]|[yY])
     *)
         ;;
 esac
-

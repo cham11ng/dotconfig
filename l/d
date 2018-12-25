@@ -13,9 +13,15 @@ cd $DOCKER
 
 echo_info "Starting: mssql"
 docker-compose up -d mssql
+
 echo_info "Starting: redis"
 docker-compose up -d redis
-echo_info "Starting: auth/common/manager/admin"
-docker-compose up -d auth common manager admin
-docker-compose logs -f --tail 0
+
+echo_info "Starting: auth/common/manager/admin/files"
+docker-compose up -d auth common manager admin files
+
+echo_info "Starting: nginx"
 docker-compose up -d nginx
+
+echo_info "Logging:"
+docker-compose logs -f --tail 0

@@ -1,0 +1,41 @@
+#!/bin/bash
+
+COLOR_GREEN='\033[0;32m'
+COLOR_RED='\033[0;31m'
+COLOR_OFF='\033[0m'
+
+border() {
+    echo "-------------------------------------------------------------------------------------"
+}
+
+sync() {
+    border
+
+    echo_info "Changing path: $1"
+    cd $1
+
+    echo_info "Fetching branch from origin: $2"
+    git fetch origin $2
+
+    echo_info "Checkout branch: $2"
+    git checkout $2
+
+    echo_info "Syncing with origin/$2"
+    git pull origin $2
+}
+
+echo_info() {
+    echo ${COLOR_GREEN}${1}${COLOR_OFF}
+}
+
+update() {
+    sync $DB $1
+    sync $AUTH $1
+    sync $COMMON_API $1
+    sync $MANAGER_API $1
+    sync $ADMIN_API $1
+    sync $BACKEND $1
+    sync $WEB_APP $1
+}
+
+${1:-update} ${2:-dev}

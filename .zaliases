@@ -5,6 +5,7 @@ alias zshconfig="vim ~/.zshrc"
 alias copy="xclip -selection clipboard && echo 'Copied to clipboard.'"
 alias path="pwd | xclip -selection clipboard && echo 'Path copied to clipboard'"
 alias sshkey="cat ~/.ssh/id_rsa.pub | xclip -selection clipboard && echo 'Public SSH copied to clipboard.'"
+alias untar="tar -xvzf"
 
 # Others
 alias y="yarn"
