@@ -1,8 +1,39 @@
+[profiles]
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+foreground-color='#F8F8F2'
+visible-name='Default'
+login-shell=true
+cell-width-scale=1.0
+badge-color='#AC7EA8'
+badge-color-set=false
+default-size-columns=120
+cursor-shape='ibeam'
+cursor-colors-set=false
+highlight-colors-set=false
+cell-height-scale=1.2000000000000002
+use-custom-command=false
+bold-color-set=false
+font='Operator Mono Semi-Light 9'
+terminal-bell='none'
+draw-margin=80
+use-system-font=false
+palette=['#272822', '#EFEF29292929', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#FFFFFFFFFFFF', '#75715E', '#EFEF29292929', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#FFFFFFFFFFFF']
+notify-silence-threshold=60
+text-blink-mode='never'
+background-color='#272822'
+background-transparency-percent=10
+dim-transparency-percent=19
+use-theme-colors=false
+
 [/]
-terminal-title-show-when-single=false
-enable-wide-handle=true
 quake-specific-monitor=0
 terminal-title-style='none'
+theme-variant='dark'
+enable-wide-handle=true
+prompt-on-delete-profile=false
+terminal-title-show-when-single=false
 window-style='disable-csd-hide-toolbar'
 
 [keybindings]
@@ -22,25 +53,3 @@ session-switch-to-terminal-up='<Primary>k'
 session-resize-terminal-right='<Primary><Shift>Right'
 session-switch-to-previous-terminal='disabled'
 session-switch-to-terminal-left='<Primary>h'
-
-[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-foreground-color='#F8F8F2'
-visible-name='Default'
-login-shell=true
-palette=['#272822', '#EFEF29292929', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#FFFFFFFFFFFF', '#75715E', '#EFEF29292929', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#FFFFFFFFFFFF']
-badge-color='#AC7EA8'
-badge-color-set=false
-default-size-columns=120
-cursor-shape='ibeam'
-cursor-colors-set=false
-highlight-colors-set=false
-use-system-font=false
-use-custom-command=false
-bold-color-set=false
-font='Operator Mono Semi-Light 9'
-terminal-bell='icon-sound'
-notify-silence-threshold=60
-background-color='#272822'
-background-transparency-percent=10
-dim-transparency-percent=19
-use-theme-colors=false
