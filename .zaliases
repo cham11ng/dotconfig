@@ -1,12 +1,3 @@
-# Unix
-alias c="clear"
-alias port="netstat -ntlp"
-alias zshconfig="vim ~/.zshrc"
-alias copy="xclip -selection clipboard && echo 'Copied to clipboard.'"
-alias path="pwd | xclip -selection clipboard && echo 'Path copied to clipboard'"
-alias sshkey="cat ~/.ssh/id_rsa.pub | xclip -selection clipboard && echo 'Public SSH copied to clipboard.'"
-alias untar="tar -xvzf"
-
 # Others
 alias y="yarn"
 
@@ -16,6 +7,7 @@ alias gdc="git diff --cached"
 alias gpoh='git push origin HEAD'
 alias glf="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias nah="git reset --hard; git clean -df;"
+alias lhash="git rev-parse --short=7 HEAD"
 
 # Laravel
 alias art="php artisan"
@@ -38,3 +30,24 @@ alias dpa="docker ps -a"
 alias dex="docker-compose exec"
 alias dco="docker-compose"
 alias dcl="docker-compose logs -f --tail 20"
+
+# Vim
+alias vim="nvim"
+
+# Unix
+alias c="clear"
+alias port="netstat -ntlp"
+alias zshconfig="vim ~/.zshrc"
+alias copy="pbcopy; echo 'Copied to clipboard.'"
+alias path="echo -n `pwd` | pbcopy; echo 'Path copied to clipboard: `pwd`'"
+alias sshkey="echo -n `cat ~/.ssh/id_rsa.pub` | pbcopy; echo 'Public SSH copied to clipboard.\n\n`cat ~/.ssh/id_rsa.pub`'"
+alias untar="tar -xvzf"
+alias chash='sed -i "" "s/\"laudio\/core#.*\"/\"laudio\/core#$HASH\"/" package.json'
+alias ghash="git rev-parse --short=7 HEAD | pbcopy; echo 'Latest core hash copied to clipboard.'"
+commit() {
+  CURRENT_BRANCH=$(eval git rev-parse --abbrev-ref HEAD)
+
+  git commit -S -m "$CURRENT_BRANCH $1"
+}
+alias gcsb="commit $1"
+
