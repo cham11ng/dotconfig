@@ -44,5 +44,14 @@
   "eslint.autoFixOnSave": true,
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": false,
-  "workbench.statusBar.feedback.visible": false
+  "yaml.schemas": {
+    "file:///Users/cham11ng/.vscode/extensions/atlassian.atlascode-1.4.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.editor.showTabs": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.rendererType": "dom"
 }

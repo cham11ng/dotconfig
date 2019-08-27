@@ -1,3 +1,8 @@
+# Colors
+COLOR_GREEN='\033[0;32m'
+COLOR_RED='\033[0;31m'
+COLOR_OFF='\033[0m'
+
 # Others
 alias y="yarn"
 
@@ -25,7 +30,8 @@ alias remove="sudo apt autoremove"
 alias upgrade="sudo apt full-upgrade"
 
 # Docker
-alias dps="docker ps"
+alias dim="docker images"
+alias drm="docker rmi"
 alias dpa="docker ps -a"
 alias dex="docker-compose exec"
 alias dco="docker-compose"
@@ -42,8 +48,10 @@ alias copy="pbcopy; echo 'Copied to clipboard.'"
 alias path="echo -n `pwd` | pbcopy; echo 'Path copied to clipboard: `pwd`'"
 alias sshkey="echo -n `cat ~/.ssh/id_rsa.pub` | pbcopy; echo 'Public SSH copied to clipboard.\n\n`cat ~/.ssh/id_rsa.pub`'"
 alias untar="tar -xvzf"
-alias chash='sed -i "" "s/\"laudio\/core#.*\"/\"laudio\/core#$HASH\"/" package.json'
+alias chash='sed -i -E "s/\/core#.*\"/\/core#$HASH\"/" package.json'
+# alias chash='sed -i -E "s/\"laudio\/core#.*\"/\"laudio\/core#$HASH\"/" package.json'
 alias ghash="git rev-parse --short=7 HEAD | pbcopy; echo 'Latest core hash copied to clipboard.'"
+
 commit() {
   CURRENT_BRANCH=$(eval git rev-parse --abbrev-ref HEAD)
 
@@ -51,3 +59,21 @@ commit() {
 }
 alias gcsb="commit $1"
 
+info() {
+  echo ${COLOR_GREEN}${1}${COLOR_OFF}
+}
+
+clean_branch() {
+  info "Pruning remote branches"
+  git fetch --prune
+
+  info "Fetching branch from origin: $1"
+  git fetch origin $1
+  
+  info "Checkout branch: $1"
+  git checkout $1
+
+  info "Deleting branch except: $1"
+  git branch | grep -v $1 | xargs -I_percent -- sh -c 'echo "Deleting branch _percent"; git branch -D _percent'
+}
+alias gcoc='clean_branch $1'
