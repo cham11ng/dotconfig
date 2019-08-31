@@ -1,32 +1,45 @@
 {
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorBlinking": "expand",
   "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.gotoLocation.multiple": "goto",
   "editor.lineHeight": 26,
   "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "eslint.autoFixOnSave": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
+  "gitlens.keymap": "none",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": -1,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Operator Mono Dark Theme",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true
   },
-  "gitlens.keymap": "none",
-  "prettier.printWidth": 120,
-  "editor.formatOnSave": true,
-  "prettier.singleQuote": true,
-  "terminal.integrated.fontSize": 14,
-  "window.zoomLevel": -1,
-  "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Operator Mono Dark Theme",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -39,19 +52,41 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.gotoLocation.multiple": "goto",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "eslint.autoFixOnSave": true,
-  "breadcrumbs.enabled": true,
-  "editor.renderControlCharacters": false,
-  "yaml.schemas": {
-    "file:///Users/cham11ng/.vscode/extensions/atlassian.atlascode-1.4.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "workbench.editor.showTabs": true,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.rendererType": "dom"
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ]
 }
