@@ -18,7 +18,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # ssh
-export SSH_KEY_PATH="Users/cham11ng/.ssh/id_rsa"
+export SSH_KEY_PATH="/Users/cham11ng/.ssh/id_rsa"
 
 export DB="/Users/cham11ng/l/db"
 export CORE="/Users/cham11ng/l/core"
@@ -34,5 +34,6 @@ export CHILL_CONFIG="/Users/cham11ng/Source/chill/monitor/chill.yml"
 
 export VAULT_ADDR=opps
 export VAULT_TOKEN=opps
+export LAUDIO_DOCKER_REGISTRY=opps
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
