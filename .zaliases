@@ -69,11 +69,14 @@ clean_branch() {
 
   info "Fetching branch from origin: $1"
   git fetch origin $1
-  
+
   info "Checkout branch: $1"
   git checkout $1
 
   info "Deleting branch except: $1"
   git branch | grep -v $1 | xargs -I_percent -- sh -c 'echo "Deleting branch _percent"; git branch -D _percent'
+
+  info "Updating branch from origin"
+  git pull origin $1
 }
 alias gcoc='clean_branch $1'

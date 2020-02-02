@@ -4,9 +4,9 @@
   "editor.cursorBlinking": "expand",
   "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.fontSize": 15,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
   "editor.gotoLocation.multiple": "goto",
   "editor.lineHeight": 26,
   "editor.minimap.enabled": false,
@@ -29,7 +29,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": -1,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Operator Mono Dark Theme",
+  "workbench.colorTheme": "Tomorrow Night Operator Mono",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
@@ -40,7 +40,33 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true
   },
-  "[json]": {
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text",
+    "foreground": "red",
+    "background": "white",
+    "opacity": 50,
+    "iconColour": "blue"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "line"
+    },
+    "FIXME": {
+      "foreground": "black",
+      "iconColour": "yellow"
+    }
+  },
+  "dart.checkForSdkUpdates": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.wordWrapColumn": 120,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
@@ -88,5 +114,15 @@
       "before": ["leader", "w"],
       "commands": ["workbench.action.files.save"]
     }
-  ]
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "cSpell.userWords": ["laudio", "preflogic", "pytest", "varchar"],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false
 }
