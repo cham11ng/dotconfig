@@ -8,6 +8,7 @@ alias y="yarn"
 
 # Git and Github
 alias gl="git log --oneline --graph"
+alias gpr="hub pull-request -b dev"
 alias gdc="git diff --cached"
 alias gpoh='git push origin HEAD'
 alias glf="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -40,22 +41,32 @@ alias dcl="docker-compose logs -f --tail 20"
 # Vim
 alias vim="nvim"
 
+# Python
+alias lenv=". /Users/cham11ng/Source/venv/bin/activate"
+
 # Unix
 alias c="clear"
 alias port="netstat -ntlp"
 alias zshconfig="vim ~/.zshrc"
 alias copy="pbcopy; echo 'Copied to clipboard.'"
-alias path="echo -n `pwd` | pbcopy; echo 'Path copied to clipboard: `pwd`'"
+alias path='pwd | pbcopy; echo "Path copied to clipboard: $(pbpaste)"'
 alias sshkey="echo -n `cat ~/.ssh/id_rsa.pub` | pbcopy; echo 'Public SSH copied to clipboard.\n\n`cat ~/.ssh/id_rsa.pub`'"
 alias untar="tar -xvzf"
 alias chash='sed -i -E "s/\/core#.*\"/\/core#$HASH\"/" package.json'
 # alias chash='sed -i -E "s/\"laudio\/core#.*\"/\"laudio\/core#$HASH\"/" package.json'
+alias laudio_release="/Users/cham11ng/l/scripts/app/release.sh"
 alias ghash="git rev-parse --short=7 HEAD | pbcopy; echo 'Latest core hash copied to clipboard.'"
+awslogin='echo "docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) https://028093511255.dkr.ecr.us-east-1.amazonaws.com" | pbcopy && echo "AWS login command copied to clipboard." && pbpaste'
 
 commit() {
   CURRENT_BRANCH=$(eval git rev-parse --abbrev-ref HEAD)
 
-  git commit -S -m "$CURRENT_BRANCH $1"
+  if [ "$1"ssh = "-m" ]; then
+    git commit -S -m "$CURRENT_BRANCH $2"
+  else
+    git commit -S -m "$CURRENT_BRANCH $1"
+  fi
+
 }
 alias gcsb="commit $1"
 
