@@ -7,20 +7,17 @@
   "editor.fontSize": 15,
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "editor.gotoLocation.multiple": "goto",
-  "editor.lineHeight": 26,
+  "editor.lineHeight": 27,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "eslint.autoFixOnSave": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
   "gitlens.keymap": "none",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 14,
@@ -29,12 +26,13 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": -1,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Tomorrow Night Operator Mono",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
+  "editor.rulers": [80, 120],
+  "path-intellisense.extensionOnImport": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
@@ -65,22 +63,41 @@
   "editor.wordWrapColumn": 120,
   "typescript.preferences.quoteStyle": "single",
   "javascript.preferences.quoteStyle": "single",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
   },
+  "cSpell.userWords": [
+    "Chamling",
+    "camelcase",
+    "camelize",
+    "paramiko",
+    "pytest",
+    "sftp",
+    "varchar"
+  ],
+  "editor.suggestSelection": "first",
+  "python.linting.flake8Enabled": true,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "python.languageServer": "Microsoft",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSaveMode": "modifications",
+  "python.linting.flake8Args": ["--max-line-length=120"],
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
@@ -114,15 +131,5 @@
       "before": ["leader", "w"],
       "commands": ["workbench.action.files.save"]
     }
-  ],
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "cSpell.userWords": ["laudio", "preflogic", "pytest", "varchar"],
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.jediEnabled": false
+  ]
 }
