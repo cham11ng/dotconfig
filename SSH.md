@@ -134,6 +134,7 @@ $ git config --global user.name "Sagar Chamling"
 $ git config --global user.email sgr.raee@gmail.com
 $ git config --global core.editor vim
 $ git config --global commit.gpgsign true
+$ git config --global pull.rebose false
 
 gpg --list-secret-keys --keyid-format LONG
   /Users/hubot/.gnupg/secring.gpg
@@ -142,6 +143,10 @@ gpg --list-secret-keys --keyid-format LONG
   uid                          Hubot 
   ssb   4096R/42B317FD4BA89E7A 2016-03-10
 $  git config --global user.signingkey 3AA5C34371567BD2
+
+# Remember GPG password when signing git commits
+$ vim ~/.gnupg/gpg-agent.conf 
+$ default-cache-ttl 3600
 ```
 
 ## References
@@ -149,3 +154,4 @@ $  git config --global user.signingkey 3AA5C34371567BD2
 * https://help.github.com/articles/connecting-to-github-with-ssh/
 * https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html
 * https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/telling-git-about-your-signing-key
+* https://stackoverflow.com/questions/36847431/remember-gpg-password-when-signing-git-commits

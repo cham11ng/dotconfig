@@ -38,3 +38,6 @@ export PATH=$HOME/Library/Python/3.7/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export LC_ALL=en_US.UTF-8
+
+# GPG TTY
+export GPG_TTY=$(tty)
