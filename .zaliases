@@ -16,12 +16,12 @@ alias nah="git reset --hard; git clean -df;"
 alias lhash="git rev-parse --short=7 HEAD"
 
 # Laravel
-alias art="php artisan"
-alias tinker="art tinker"
-alias migrate="art migrate"
-alias routes="art route:list"
-alias fresh="art migrate:fresh --seed"
-alias serve="art serve --host 0.0.0.0"
+# alias art="php artisan"
+# alias tinker="art tinker"
+# alias migrate="art migrate"
+# alias routes="art route:list"
+# alias fresh="art migrate:fresh --seed"
+# alias serve="art serve --host 0.0.0.0"
 
 # APT
 alias purge="sudo apt purge"
@@ -56,12 +56,12 @@ alias chash='sed -i -E "s/\/core#.*\"/\/core#$HASH\"/" package.json'
 # alias chash='sed -i -E "s/\"laudio\/core#.*\"/\"laudio\/core#$HASH\"/" package.json'
 alias laudio_release="/Users/cham11ng/l/scripts/app/release.sh"
 alias ghash="git rev-parse --short=7 HEAD | pbcopy; echo 'Latest core hash copied to clipboard.'"
-awslogin='echo "docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) https://028093511255.dkr.ecr.us-east-1.amazonaws.com" | pbcopy && echo "AWS login command copied to clipboard." && pbpaste'
+alias awslogin='echo "docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) https://028093511255.dkr.ecr.us-east-1.amazonaws.com" | pbcopy && echo "AWS login command copied to clipboard." && pbpaste'
 
 commit() {
   CURRENT_BRANCH=$(eval git rev-parse --abbrev-ref HEAD)
 
-  if [ "$1"ssh = "-m" ]; then
+  if [ "$1" = "-m" ]; then
     git commit -S -m "$CURRENT_BRANCH $2"
   else
     git commit -S -m "$CURRENT_BRANCH $1"
@@ -80,7 +80,7 @@ clean_branch() {
 
   info "Fetching branch from origin: $1"
   git fetch origin $1
-
+  
   info "Checkout branch: $1"
   git checkout $1
 
@@ -91,3 +91,7 @@ clean_branch() {
   git pull origin $1
 }
 alias gcoc='clean_branch $1'
+alias rmnm="find . -name 'node_modules' -type d -prune -exec echo 'Deleting {}' \; -exec rm -rf {} \;"
+
+alias lon='/Applications/led-backlight-osx'
+alias loff='/Applications/led-backlight-osx off'

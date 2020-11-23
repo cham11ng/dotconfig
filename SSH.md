@@ -134,9 +134,18 @@ $ git config --global user.name "Sagar Chamling"
 $ git config --global user.email sgr.raee@gmail.com
 $ git config --global core.editor vim
 $ git config --global commit.gpgsign true
+
+gpg --list-secret-keys --keyid-format LONG
+  /Users/hubot/.gnupg/secring.gpg
+  ------------------------------------
+  sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+  uid                          Hubot 
+  ssb   4096R/42B317FD4BA89E7A 2016-03-10
+$  git config --global user.signingkey 3AA5C34371567BD2
 ```
 
 ## References
 
 * https://help.github.com/articles/connecting-to-github-with-ssh/
 * https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html
+* https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/telling-git-about-your-signing-key
