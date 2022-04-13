@@ -1,5 +1,0 @@
-#!/bin/bash
-
-for i in $(curl "https://api.github.com/orgs/opps/repos?access_token=opps" | sed '/[ ]*"ssh_url":/!d;s/[^:]*: "//;s/",$//'); do
-  git clone $i
-done

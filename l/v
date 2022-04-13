@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo openvpn --config ~/Downloads/opps --auth-user-pass vpn_credential --auth-nocache

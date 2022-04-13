@@ -1,3 +1,0 @@
-#!/bin/bash
-
-http -f POST http://localhost/manager/webhooks/test/observations x-webhook-token:opps

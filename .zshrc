@@ -3,16 +3,14 @@
 # MAC
 export ZSH="~/.oh-my-zsh"
 
-# ZSH_THEME="gitster"
-ZSH_THEME="spaceship"
+
+ZSH_THEME="gitster"
 
 plugins=(
   git
-  docker
   autojump
-  docker-compose
-  zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -36,4 +34,12 @@ export VAULT_ADDR=opps
 export VAULT_TOKEN=opps
 export LAUDIO_DOCKER_REGISTRY=opps
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+# The plugin will auto execute this zvm_after_lazy_keybindings function
+function zvm_after_lazy_keybindings() {
+  bindkey -M vicmd 's' your_normal_widget
+  bindkey -M visual 'n' your_visual_widget
+}
+
+zmodload zsh/zprof

@@ -1,9 +1,0 @@
-<application>
-  <component name="PropertiesComponent">
-    <property name="DBE.Default.Dialect" value="TSQL" />
-    <property name="DBE.Init.Cfg.1" value="true" />
-    <property name="DBE.Init.DialogShown.Ide" value="true" />
-    <property name="Default.SavedEditorTheme" value="_@user_Default" />
-    <property name="lastTip" value="2" />
-  </component>
-</application>

@@ -11,6 +11,7 @@
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec
@@ -32,8 +33,7 @@ export PATH="/usr/local/opt/apr-util/bin:$PATH"
 export PATH=$PATH:$HOME/.pub-cache/bin
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH=$HOME/Library/Python/3.7/bin:$PATH
-
-
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
@@ -41,3 +41,7 @@ export LC_ALL=en_US.UTF-8
 
 # GPG TTY
 export GPG_TTY=$(tty)
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi

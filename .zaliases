@@ -1,27 +1,18 @@
+#!/bin/bash
+
 # Colors
 COLOR_GREEN='\033[0;32m'
 COLOR_RED='\033[0;31m'
 COLOR_OFF='\033[0m'
 
-# Others
-alias y="yarn"
-
 # Git and Github
 alias gl="git log --oneline --graph"
-alias gpr="hub pull-request -b dev"
 alias gdc="git diff --cached"
 alias gpoh='git push origin HEAD'
 alias glf="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias nah="git reset --hard; git clean -df;"
 alias lhash="git rev-parse --short=7 HEAD"
-
-# Laravel
-# alias art="php artisan"
-# alias tinker="art tinker"
-# alias migrate="art migrate"
-# alias routes="art route:list"
-# alias fresh="art migrate:fresh --seed"
-# alias serve="art serve --host 0.0.0.0"
+alias mux='tmuxinator'
 
 # APT
 alias purge="sudo apt purge"
@@ -38,16 +29,18 @@ alias dex="docker-compose exec"
 alias dco="docker-compose"
 alias dcl="docker-compose logs -f --tail 20"
 
+# K8S
+alias k="kubectl"
+
 # Vim
 alias vim="nvim"
 
 # Python
-alias lenv=". /Users/cham11ng/Source/venv/bin/activate"
+alias lenv=". /Users/cham11ng/l/venv/bin/activate"
 
 # Unix
 alias c="clear"
 alias port="netstat -ntlp"
-alias zshconfig="vim ~/.zshrc"
 alias copy="pbcopy; echo 'Copied to clipboard.'"
 alias path='pwd | pbcopy; echo "Path copied to clipboard: $(pbpaste)"'
 alias sshkey="echo -n `cat ~/.ssh/id_rsa.pub` | pbcopy; echo 'Public SSH copied to clipboard.\n\n`cat ~/.ssh/id_rsa.pub`'"
@@ -57,6 +50,7 @@ alias chash='sed -i -E "s/\/core#.*\"/\/core#$HASH\"/" package.json'
 alias laudio_release="/Users/cham11ng/l/scripts/app/release.sh"
 alias ghash="git rev-parse --short=7 HEAD | pbcopy; echo 'Latest core hash copied to clipboard.'"
 alias awslogin='echo "docker login -u AWS -p $(aws ecr get-login-password --region us-east-1) https://028093511255.dkr.ecr.us-east-1.amazonaws.com" | pbcopy && echo "AWS login command copied to clipboard." && pbpaste'
+alias awsmfa='aws sts get-session-token --serial-number arn:aws:iam::028093511255:mfa/sagarchamling --token-code'
 
 commit() {
   CURRENT_BRANCH=$(eval git rev-parse --abbrev-ref HEAD)
@@ -90,7 +84,7 @@ clean_branch() {
   info "Updating branch from origin"
   git pull origin $1
 }
-alias gcoc='clean_branch $1'
+alias gcoc="clean_branch $1"
 alias rmnm="find . -name 'node_modules' -type d -prune -exec echo 'Deleting {}' \; -exec rm -rf {} \;"
 
 alias lon='/Applications/led-backlight-osx'
