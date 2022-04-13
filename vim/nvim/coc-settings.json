@@ -1,0 +1,31 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "typescript", "graphql", "html", "yaml",  "json", "python"],
+
+  // python config
+  "python.pythonPath": "/Users/cham11ng/Source/venv/bin/python3.8",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Args": ["--max-line-length=120"],
+  "python.linting.pylintEnabled": true,
+
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  },
+
+  "diagnostic-languageserver.filetypes": {
+    "sh": "shellcheck"
+  },
+
+  "snippets.ultisnips.directories":
+  [
+    "UltiSnips",
+    "~/.config/nvim/utils/snips"
+  ]
+}
+
