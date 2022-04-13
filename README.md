@@ -28,6 +28,10 @@ $ dconf dump /com/gexperts/Tilix/ > tilix.dconf # Export
 $ dconf load /com/gexperts/Tilix/ < tilix.dconf # Import
 ```
 
+Set the custom keyboard shortcuts.
+
+![image](https://user-images.githubusercontent.com/13098867/163102023-50e9663c-161d-4a0c-a118-2ea3432d60eb.png)
+
 ## GPG Keys Setup
 
 ```sh
