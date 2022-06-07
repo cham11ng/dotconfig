@@ -14,6 +14,25 @@ alias nah="git reset --hard; git clean -df;"
 alias lhash="git rev-parse --short=7 HEAD"
 alias mux='tmuxinator'
 
+create_pull_request() {
+   param=${1:-0}
+
+  if [ $param = "ops" ]; then
+    info "Creating PR with OPS REVIEWERS: $OPS_REVIEWERS"
+    gh pr create -a @me -B dev -r "$OPS_REVIEWERS"
+  elif [ $param = "inf" ]; then
+    info "Creating PR with INF REVIEWERS: $INF_REVIEWERS"
+    gh pr create -a @me -B dev -r "$INF_REVIEWERS"
+  else
+    info "Creating PR"
+    gh pr create -a @me -B dev
+  fi
+}
+alias gpr="create_pull_request"
+alias gpr-ops="create_pull_request ops"
+alias gpr-inf="create_pull_request inf"
+
+
 # APT
 alias purge="sudo apt purge"
 alias update="sudo apt update"
