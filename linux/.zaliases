@@ -44,9 +44,9 @@ alias upgrade="sudo apt full-upgrade"
 alias dim="docker images"
 alias drm="docker rmi"
 alias dpa="docker ps -a"
-alias dex="docker-compose exec"
-alias dco="docker-compose"
-alias dcl="docker-compose logs -f --tail 20"
+alias dex="docker compose exec"
+alias dco="docker compose"
+alias dcl="docker compose logs -f --tail 20"
 
 # K8S
 alias k="kubectl"
