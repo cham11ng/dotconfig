@@ -14,6 +14,22 @@ $ cp .zprofile ~/.zprofile
 $ cp .zaliases ~/.zaliases
 ```
 
+## NVIM
+
+```sh
+$ cp -R vim/nvim ~/.config
+$ cp -R vim/coc ~/.config
+
+$ cd ~/.config/nvim
+$ vim .
+
+# Install all plugins
+:PlugInstall
+
+# Install all COC packages
+:CocInstall coc-diagnostic coc-html coc-json coc-pyright coc-sh coc-snippets coc-tsserver coc-vimlsp
+```
+
 ## Tilix Configuration
 
 ```sh
