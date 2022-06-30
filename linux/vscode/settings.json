@@ -1,12 +1,12 @@
 {
   "breadcrumbs.enabled": true,
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "Operator Mono Book",
+  "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "editor.lineHeight": 27,
+  "editor.lineHeight": 24,
   "editor.renderControlCharacters": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
@@ -14,17 +14,14 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
-  "gitlens.keymap": "none",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettier.singleQuote": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontSize": 12,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.activityBar.visible": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "editor.rulers": [80, 120],
   "path-intellisense.extensionOnImport": true,
@@ -32,26 +29,6 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true
-  },
-  "todo-tree.tree.showScanModeButton": false,
-  "todo-tree.highlights.defaultHighlight": {
-    "icon": "alert",
-    "type": "text",
-    "foreground": "black",
-    "background": "grey",
-    "opacity": 50,
-    "iconColour": "blue"
-  },
-  "todo-tree.highlights.customHighlight": {
-    "TODO": {
-      "icon": "check",
-      "type": "text"
-    },
-    "FIXME": {
-      "foreground": "#d1c3c2",
-      "iconColour": "yellow",
-      "background": "#b34a49"
-    }
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -67,11 +44,13 @@
     "camelize",
     "Chamling",
     "laudio",
-    "MANDATORIES",
+    "middlewares",
+    "Nimantrana",
     "paramiko",
     "preflogic",
     "pytest",
     "roundtable",
+    "Sagar",
     "sftp",
     "varchar"
   ],
@@ -111,7 +90,6 @@
       "commands": ["workbench.action.files.save"]
     }
   ],
-  // "python.pythonPath": "/Users/cham11ng/Source/venv/bin/python3.8",
   "python.linting.flake8Args": ["--max-line-length=120"],
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
@@ -130,15 +108,10 @@
     "**/CVS": true,
     "**/.DS_Store": true
   },
-  "cSpell.enableFiletypes": ["plaintext"],
-  "autoDocstring.docstringFormat": "sphinx",
-  "autoDocstring.startOnNewLine": true,
-  "autoDocstring.guessTypes": true,
-  "autoDocstring.generateDocstringOnEnter": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.colorTheme": "One Dark",
+  "workbench.colorTheme": "PowerShell ISE",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -178,44 +151,47 @@
     ]
   },
   "diffEditor.wordWrap": "off",
-  // "python.defaultInterpreterPath": "/Users/cham11ng/Source/venv/bin/python3.8",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "redhat.telemetry.enabled": true,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "codeQL.telemetry.enableTelemetry": false,
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-"diffEditor.ignoreTrimWhitespace": false,
-"terminal.integrated.defaultProfile.linux": "zsh",
-"terminal.integrated.profiles.linux": {
-  "bash": {
-    "path": "bash",
-    "icon": "terminal-bash"
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
   },
-  "zsh": {
-    "path": "zsh",
-    "args": ["--login"]
+  "git.enabled": true,
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
   },
-  "fish": {
-    "path": "fish"
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu", "-u", "cham11ng"]
+    }
   },
-  "tmux": {
-    "path": "tmux",
-    "icon": "terminal-tmux"
-  },
-  "pwsh": {
-    "path": "pwsh",
-    "icon": "terminal-powershell"
-  },
-  "zsh (2)": {
-    "path": "/usr/bin/zsh",
-    "args": ["--login"]
-  }
-},
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "window.zoomLevel": 1
 }
