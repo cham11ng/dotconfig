@@ -6,9 +6,9 @@ Zsh + VSCode.
 
 ## OS Specific Configurations
 
-- https://github.com/cham11ng/dotconfig/blob/master/win/README.md
-- https://github.com/cham11ng/dotconfig/blob/master/osx/README.md
-- https://github.com/cham11ng/dotconfig/blob/master/linux/README.md
+- [https://github.com/cham11ng/dotconfig/blob/master/win/README.md](Windows)
+- [https://github.com/cham11ng/dotconfig/blob/master/osx/README.md](OSX)
+- [https://github.com/cham11ng/dotconfig/blob/master/linux/README.md](Linux)
 
 ## ZSH Configuration
 
