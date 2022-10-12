@@ -1,8 +1,14 @@
-# .config
+# dotconfig
 
-Zsh + VSCode + Tilix configuration file.
+Zsh + VSCode.
 
 > By: Sagar Chamling
+
+## OS Specific Configurations
+
+- [https://github.com/cham11ng/dotconfig/blob/master/win/README.md](Windows)
+- [https://github.com/cham11ng/dotconfig/blob/master/osx/README.md](OSX)
+- [https://github.com/cham11ng/dotconfig/blob/master/linux/README.md](Linux)
 
 ## ZSH Configuration
 
@@ -29,24 +35,6 @@ $ vim .
 # Install all COC packages
 :CocInstall coc-diagnostic coc-html coc-json coc-pyright coc-sh coc-snippets coc-tsserver coc-vimlsp
 ```
-
-## Tilix Configuration
-
-```sh
-# Fix tilix issue
-$ sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-
-# Default terminal
-$ sudo update-alternatives --config x-terminal-emulator
-
-$ dconf dump /com/gexperts/Tilix/ > tilix.dconf # Export
-
-$ dconf load /com/gexperts/Tilix/ < tilix.dconf # Import
-```
-
-Set the custom keyboard shortcuts.
-
-![image](https://user-images.githubusercontent.com/13098867/163102023-50e9663c-161d-4a0c-a118-2ea3432d60eb.png)
 
 ## GPG Keys Setup
 
