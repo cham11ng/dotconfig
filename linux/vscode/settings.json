@@ -1,101 +1,92 @@
 {
   "breadcrumbs.enabled": true,
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "Operator Mono",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 28,
   "editor.renderControlCharacters": false,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSaveMode": "modifications",
   "editor.snippetSuggestions": "top",
+  "editor.wordWrapColumn": 120,
   "editor.tabSize": 2,
+  "editor.rulers": [
+    80,
+    120
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
-  "extensions.ignoreRecommendations": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 12,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
-  "editor.rulers": [80, 120],
-  "path-intellisense.extensionOnImport": true,
+  "workbench.settings.editor": "json",
+  "workbench.editor.enablePreview": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 12,
+  "diffEditor.wordWrap": "off",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true
   },
+  "go.toolsManagement.autoUpdate": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "redhat.telemetry.enabled": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "editor.wordWrapColumn": 120,
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.preferences.quoteStyle": "single",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en,lorem",
   "cSpell.userWords": [
     "camelcase",
     "camelize",
     "Chamling",
     "laudio",
-    "middlewares",
-    "Nimantrana",
-    "paramiko",
-    "preflogic",
     "pytest",
-    "roundtable",
     "Sagar",
+    "sagarchamling",
     "sftp",
     "varchar"
   ],
-  "editor.suggestSelection": "first",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "editor.formatOnSaveMode": "modifications",
-  "vim.hlsearch": true,
-  "vim.leader": "<space>",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "m"],
-      "commands": ["bookmarks.toggle"]
-    },
-    {
-      "before": ["<leader>", "b"],
-      "commands": ["bookmarks.list"]
-    },
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    },
-    {
-      "before": ["leader", "w"],
-      "commands": ["workbench.action.files.save"]
-    }
-  ],
-  "python.linting.flake8Args": ["--max-line-length=120"],
-  "python.linting.flake8Enabled": true,
-  "python.formatting.provider": "black",
-  "python.linting.lintOnSave": true,
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
   "files.exclude": {
     "**/.git": true,
     "**/.pyc": true,
@@ -108,10 +99,13 @@
     "**/CVS": true,
     "**/.DS_Store": true
   },
+  "cSpell.enableFiletypes": [
+    "plaintext"
+  ],
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.pdf": "default"
   },
-  "workbench.colorTheme": "PowerShell ISE",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -150,7 +144,6 @@
       }
     ]
   },
-  "diffEditor.wordWrap": "off",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -161,37 +154,104 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.fontFamily": "Operator Mono",
-  "security.workspace.trust.untrustedFiles": "open",
-  "[powershell]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
+  // The path to the `bun` executable.
+  "bun.runtime": "/home/cham11ng/.bun/bin/bun",
+  // If support for Bun should be added to the default "JavaScript Debug Terminal".
+  "bun.debugTerminal.enabled": true,
+  // If the debugger should stop on the first line of the program.
+  "bun.debugTerminal.stopOnEntry": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": true,
+    "makefile": false
   },
-  "git.enabled": true,
-  "terminal.integrated.profiles.linux": {
-    "zsh": {
-      "path": "zsh",
-      "args": ["-l"]
+  "gitlens.keymap": "none",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text",
+    "foreground": "black",
+    "background": "grey",
+    "opacity": 50,
+    "iconColour": "blue"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "text"
+    },
+    "FIXME": {
+      "foreground": "#d1c3c2",
+      "iconColour": "yellow",
+      "background": "#b34a49"
     }
   },
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
       ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Ubuntu (WSL)": {
-      "path": "C:\\Windows\\System32\\wsl.exe",
-      "args": ["-d", "Ubuntu", "-u", "cham11ng"]
+      "after": [
+        "<Esc>"
+      ]
     }
-  },
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "window.zoomLevel": 1
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    }
+  ],
+  "autoDocstring.docstringFormat": "sphinx",
+  "autoDocstring.startOnNewLine": true,
+  "autoDocstring.guessTypes": true,
+  "autoDocstring.generateDocstringOnEnter": true
 }
