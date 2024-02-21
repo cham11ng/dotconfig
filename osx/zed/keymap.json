@@ -1,0 +1,35 @@
+[
+  {
+    "bindings": {
+      "ctrl-r": "projects::OpenRecent"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-w": "editor::SelectLargerSyntaxNode",
+      "ctrl-c": "editor::Cancel"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-\\": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  }
+]
