@@ -18,3 +18,15 @@ choco install mac-precision-touchpad
 ```powershell
 Install-Module git-aliases -Scope CurrentUser -AllowClobber
 ```
+
+## Terminal Setting Path
+
+```powershell
+C:\Users\Sagar Chamling\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json
+```
+
+## Startship Configuration Path
+
+```path
+C:\Users\Sagar Chamling\.config
+```
