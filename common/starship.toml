@@ -42,11 +42,11 @@ truncation_symbol = ""
 home_symbol = "~"
 read_only_style = "red"
 read_only = " 🔒 "
-format = "[$path]($style)[$read_only]($read_only_style) on "
+format = "[$path]($style)[$read_only]($read_only_style)"
 
 [git_branch]
 symbol = " "
-format = "[$symbol$branch(:$remote_branch)]($style) "
+format = " on [$symbol$branch(:$remote_branch)]($style) "
 truncation_length = 20
 truncation_symbol = "…/"
 style = "bold green"
