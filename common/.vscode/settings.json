@@ -1,6 +1,6 @@
 {
   "breadcrumbs.enabled": true,
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "solid",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
@@ -29,6 +29,7 @@
   "workbench.statusBar.visible": true,
   "workbench.settings.editor": "json",
   "workbench.editor.enablePreview": false,
+  "workbench.activityBar.location": "hidden",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": false,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -171,29 +172,11 @@
     "makefile": false
   },
   "gitlens.keymap": "none",
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "todo-tree.tree.showScanModeButton": false,
-  "todo-tree.highlights.defaultHighlight": {
-    "icon": "alert",
-    "type": "text",
-    "foreground": "black",
-    "background": "grey",
-    "opacity": 50,
-    "iconColour": "blue"
-  },
-  "todo-tree.highlights.customHighlight": {
-    "TODO": {
-      "icon": "check",
-      "type": "text"
-    },
-    "FIXME": {
-      "foreground": "#d1c3c2",
-      "iconColour": "yellow",
-      "background": "#b34a49"
-    }
-  },
   "vim.hlsearch": true,
   "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-d>": true
+  },
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -202,6 +185,16 @@
       ],
       "after": [
         "<Esc>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "commands": [
+        "editor.action.addSelectionToNextFindMatch",
       ]
     }
   ],
