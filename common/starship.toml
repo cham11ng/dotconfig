@@ -96,3 +96,6 @@ format = '\[ [☸ $context\($namespace\)](bold purple) \]'
 
 [container]
 format = '\[ [⬢ $name](bold red dimmed) \]'
+
+[package]
+format = '\[ [📦 $version]($style) \]'
