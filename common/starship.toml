@@ -71,7 +71,7 @@ format = '\[ [💠 terraform $version]($style) 壟 [$workspace]($style) \]'
 format = '\[ [⍱ vagrant $version]($style) \]'
 
 [docker_context]
-format = '\[ [🐳 $context](bold blue) \]'
+format = '\[ [🐳](bold blue) \]'
 
 [helm]
 format = '\[ [⎈ $version](bold purple) \]'
