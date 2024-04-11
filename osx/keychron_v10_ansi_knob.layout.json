@@ -7,7 +7,7 @@
     "{+KC_LSFT}{+KC_LCTL}{+KC_LGUI}f{-KC_LSFT}{-KC_LCTL}{-KC_LGUI}",
     "{+KC_LGUI}{+KC_LCTL}q{-KC_LCTL}{-KC_LGUI}",
     "{+KC_LCTL}{+KC_LSFT}{+KC_LGUI}4{-KC_LCTL}{-KC_LSFT}{-KC_LGUI}",
-    "",
+    "{KC_F2}",
     "",
     "",
     "",
@@ -21,7 +21,7 @@
   ],
   "layers": [
     [
-      "KC_MUTE",
+      "KC_MPLY",
       "KC_ESC",
       "KC_BRID",
       "KC_BRIU",
@@ -101,7 +101,7 @@
       "KC_SLSH",
       "KC_RSFT",
       "KC_UP",
-      "CUSTOM(6)",
+      "MACRO(5)",
       "KC_LCTL",
       "CUSTOM(2)",
       "CUSTOM(4)",
@@ -416,8 +416,8 @@
   "encoders": [
     [
       [
-        "KC_VOLD",
-        "KC_VOLU"
+        "KC_MS_WH_DOWN",
+        "KC_MS_WH_UP"
       ],
       [
         "RGB_VAD",
