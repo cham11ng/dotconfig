@@ -1,4 +1,6 @@
 # ~/.config/starship.toml
+# https://gist.github.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593
+# https://gist.github.com/deepanchal/415e78646aaf5e57e10490d01ad90109
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -8,8 +10,8 @@ command_timeout = 1000
 
 # Change the default prompt format
 format = """\
-[╭╴](whitels)$env_var\
-$all[╰─](whitels)$character"""
+[╭╴](whitels)$env_var $all\
+[╰─](whitels)$character"""
 #
 # Change the default prompt characters
 [character]
