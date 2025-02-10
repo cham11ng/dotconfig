@@ -45,11 +45,11 @@ $ gpg2 --gen-key
 
 # Export GPG public key and private key
 $ gpg2 --armor --export sgr.raee@gmail.com > ~/keys/public.key
-$ gpg2 --armor --export-secret-keys sgr.raee@gmail.com > ~/keys/private.key
+$ gpg2 --armor --export-secret-keys me@email.com > ~/keys/private.key
 
 # To delete previously generated keys
-$ gpg --delete-keys sgr.raee@gmail.com
-$ gpg --delete-secret-keys sgr.raee@gmail.com
+$ gpg --delete-keys me@email.com
+$ gpg --delete-secret-keys me@email.com
 
 # Optional: To generate enough 'Entropy' for GPG key generation process
 $ sudo apt install rng-tools
