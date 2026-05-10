@@ -44,7 +44,7 @@ $ sudo apt install gnupg2 -y
 $ gpg2 --gen-key
 
 # Export GPG public key and private key
-$ gpg2 --armor --export sgr.raee@gmail.com > ~/keys/public.key
+$ gpg2 --armor --export me@email.com > ~/keys/public.key
 $ gpg2 --armor --export-secret-keys me@email.com > ~/keys/private.key
 
 # To delete previously generated keys

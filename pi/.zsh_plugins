@@ -1,0 +1,8 @@
+# Get the core OMZ library (needed for things like 'git' plugin to work)
+ohmyzsh/ohmyzsh path:lib
+
+# The plugins you had before
+ohmyzsh/ohmyzsh path:plugins/git
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-completions
